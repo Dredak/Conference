@@ -1,0 +1,113 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.homeLink {
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.homeLink:hover {
+  color: #6b76ff;
+}
+
+nav  a {
+  color: black;
+}
+@media all and (max-width: 992px) {
+  nav a {
+    color: white;
+  }
+  
+  /* li:first-child a {
+color: rgba(0, 0, 0, 0.3);
+    &:hover {
+        color: ${colors.black};
+    }
+}*/
+}
+
+.active {
+  color: rgb(226, 225, 225);
+}
+.active:hover {
+  color: black;
+}
+
+
+/* Craousel CSS */
+
+.dot-wrapper {
+  width: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot-outer {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  display: flex;      
+  }
+
+.dot-outer:hover  .dot-inner {
+  cursor: pointer;
+  background-color: #999;
+}
+.dot-inner {
+  background-color: #e6e6e6;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.slider {
+  width: 1110px;
+  
+  
+}
+@media all and (max-width: 1200px){
+  .slider {
+    width: 930px;
+  }
+}
+@media all and (max-width:992px){
+  .slider {
+  width: 690px;
+  }
+}
+@media all and (max-width:768px){
+  .slider {
+  width: 510px;
+  }
+}
+@media all and (max-width:576px){
+  .slider {
+  width: 100%;
+  }
+}
